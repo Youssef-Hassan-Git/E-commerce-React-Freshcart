@@ -12,7 +12,7 @@ export default function CartContextProvider({children}) {
     const [totalCartPrice, setTotalCartPrice] = useState(0)
     const [cartId, setCartId] = useState(null);
     const [cartOwner, setCartOwner] = useState(null)
-    const {token } = useContext(AuthContext)
+    const {token} = useContext(AuthContext)
 
    
   async function addProductToCart(productId) {

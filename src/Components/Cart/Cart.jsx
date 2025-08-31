@@ -168,19 +168,19 @@ numOfCartItems ===0 ?
       return(
         <tr key={product._id} className="bg-white border-b  border-gray-200 hover:bg-gray-50">
         <td className="p-6">
-          <img src={product.product.imageCover} className="w-16 md:w-32 max-w-full max-h-full hover:bg-emerald-500 p-2  rounded-xl  transition-all  duration-200 hover:shadow-lg hover:shadow-emerald-300" alt={product.product.title} />
+          <img src={product?.product?.imageCover} className="w-16 md:w-32 max-w-full max-h-full hover:bg-emerald-500 p-2  rounded-xl  transition-all  duration-200 hover:shadow-lg hover:shadow-emerald-300" alt={product?.product?.title} />
         </td>
         <td className='p-4'>
           <p className="mb-3 text-emerald-500 hover:text-emerald-600 font-bold text-lg">
-            {product.product.title.split(" ").splice(0, 4).join(" ")}
+            {product?.product?.title?.split(" ").splice(0, 4).join(" ")}
           </p>
           <p className='mb-3'>
             <span className="text-blue-600 font-medium">Category: </span>
-            <span className="text-gray-700">{product.product.category.name}</span>
+            <span className="text-gray-700">{product?.product?.category?.name}</span>
           </p>
           <p>
             <span className="text-purple-600 font-medium">Brand: </span>
-            <span className="text-gray-700">{product.product.brand.name}</span>
+            <span className="text-gray-700">{product?.product?.brand?.name}</span>
           </p>
         </td>
         <td className="px-6 py-4">
