@@ -22,6 +22,7 @@ import { Offline } from 'react-detect-offline'
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword'
 import VerifyForgotCode from './Components/VerifyForgotCode/VerifyForgotCode'
 import ResetPassword from './Components/ResetPassword/ResetPassword'
+import PaymentSuccess from './Components/AfterSuccessPayment/PaymentSuccess'
 
 
 const router = createBrowserRouter([
@@ -40,8 +41,8 @@ const router = createBrowserRouter([
     {path: "/productdetails/:id", element: <ProtectedRoute> <ProductDetails /></ProtectedRoute> },
     {path: "/allorders", element: <ProtectedRoute> <AllOrders /></ProtectedRoute> },
     {path: "/paymentaddress", element: <ProtectedRoute> <PaymentAddress /></ProtectedRoute> },
+    {path: "/cart/allorders", element: <ProtectedRoute> <PaymentSuccess /></ProtectedRoute> },
 
-    
   ]}
 
 ]);

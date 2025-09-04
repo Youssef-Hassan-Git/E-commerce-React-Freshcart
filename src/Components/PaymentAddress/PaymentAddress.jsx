@@ -43,7 +43,7 @@ export default function PaymentAddress() {
         },
         {
           params: {
-            url: 'https://e-commerce-react-freshcart.vercel.app/'
+            url: 'https://e-commerce-react-freshcart.vercel.app/cart'
           },
           headers:{
             token: localStorage.getItem("tkn")
